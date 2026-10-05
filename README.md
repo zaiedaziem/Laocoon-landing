@@ -5,13 +5,13 @@ bronze horse as you scroll, forge sparks rise around it, and a slow liquid-bronz
 shifts from molten bronze to deep sapphire.
 
 Plain HTML, CSS and ES modules — no build step. three.js loads from unpkg through the
-import map in `index.html`; the model and image load from `ASSET_BASE_URL` in `js/config.js`.
+import map in `index.html`; the model and image live in `assets/` (the path is `ASSET_BASE_URL` in `js/config.js`).
 
 ## Requirements
 
 - Python 3 (only to serve the files — nothing to install, no build step)
 - A modern browser with WebGL (Chrome, Edge, Firefox, Safari)
-- An internet connection: fonts, three.js and the bronze horse model (about 3.5 MB) load from CDNs
+- An internet connection for the libraries and fonts (three.js, Google Fonts) — the bronze horse model and image are local, in `assets/`
 
 ## Run it
 
@@ -57,5 +57,6 @@ js/sparks.js         450 forge-spark particles
 js/model.js          bronze horse: load, material, scale, centre
 js/ui.js             per-letter titles, slides + progress, grid dots, nav
 js/config.js         ASSET_BASE_URL and the failed-asset banner
+assets/              bronze horse model, editorial image
 notes/               the original build spec
 ```

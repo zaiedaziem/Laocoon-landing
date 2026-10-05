@@ -1,5 +1,5 @@
 // Asset base URL, and a visible banner for any asset that fails to load.
-export const ASSET_BASE_URL = "https://api.getlayers.ai/storage/v1/object/public/public/assets/laocoon-59f84455c6";
+export const ASSET_BASE_URL = "assets";
 
 export function reportAssetError(url) {
     const line = document.createElement('div');
